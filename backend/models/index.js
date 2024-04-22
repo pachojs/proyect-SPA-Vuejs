@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 const UserModel = require('./users.js');
-const FilmModel = require('./films.js');
+
 
 //MongoDB Connection
 const DB_URL = 'mongodb://mongo:oeHnoYRSj4cVcoCh7dpy@containers-us-west-67.railway.app:7443';
@@ -37,10 +37,9 @@ console.log('Desconectado de la base de datos MongoDB');
 });
 
 const User = UserModel;
-const Film = FilmModel;
+
 
 
 module.exports = {
     User,
-    Film,
 }
